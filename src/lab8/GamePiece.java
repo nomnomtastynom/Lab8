@@ -13,12 +13,13 @@ YELLOW_BOOT (new GamePieceAppearance(Color.YELLOW,Shape.BOOT), 7);
 
 private GamePieceAppearance appearance; 
 private int priority;
-
+//Assigning the appearance and the priorities
 private GamePiece(GamePieceAppearance appearance, int priority)
 {
     this.appearance = appearance;
     this.priority = priority;
 }
+//Gets the color of the object
     public Color getColor(){
         return this.appearance.getColor();
     }
