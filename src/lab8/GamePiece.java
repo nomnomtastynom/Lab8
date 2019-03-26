@@ -23,9 +23,11 @@ private GamePiece(GamePieceAppearance appearance, int priority)
     public Color getColor(){
         return this.appearance.getColor();
     }
+    //Gets the shape of the object
     public Shape getShape(){
         return this.getShape();
     }
+    //Will check who will move first
     public GamePiece movesFirst(GamePiece a, GamePiece b){
         if (a.priority < b.priority){
             return a;
@@ -34,6 +36,7 @@ private GamePiece(GamePieceAppearance appearance, int priority)
             return b;
         }
     }
+    //Returns the output of what players and the piece
     public String toString(){
         return String.format("%s: a %s %s with priority %d", this.name(), this.getColor(), this.getShape(), this.priority);
     }
