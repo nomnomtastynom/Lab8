@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class LocationTest
 {
-
+    //This is the test class for the Locations. Most of it was provided by the TA
     @Test
     public void testLocation()
     {
